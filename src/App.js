@@ -7,7 +7,7 @@ function App() {
     weather:[{}]
   })
   useEffect (()=>{
-    axios.get("https://api.openweathermap.org/data/2.5/weather?appid=3e633f1bdd3e5cd998c1b7c91af67a7d&q=Alappuzha,India&units=metric")
+    axios.get("https://api.openweathermap.org/data/2.5/weather?appid=3e633f1bdd3e5cd998c1b7c91af67a7d&q=delhi,India&units=metric")
     .then(response=>{
       // console.log(response.data)
       setweatherdata(response.data)
